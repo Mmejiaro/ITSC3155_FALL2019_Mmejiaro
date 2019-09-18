@@ -15,11 +15,15 @@ module FunWithStrings
       end
     end
     
-    count
+   return count
     
   end
   def anagram_groups
     # your code here
+    
+    anagram = self.downcase.split.group_by{ |x| x.chars.sort }.values
+    
+    return anagram
   end
 end
 
