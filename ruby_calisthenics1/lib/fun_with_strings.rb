@@ -5,6 +5,17 @@ module FunWithStrings
   end
   def count_words
     # your code here
+    count = {}
+    
+    self.downcase.gsub(/[^a-z\s]/,'').split.each do |phrase|
+      if count[phrase] != nil
+        count[phrase] += 1
+      else
+        count[phrase] = 1
+      end
+    end
+    return count
+    
   end
   def anagram_groups
     # your code here
