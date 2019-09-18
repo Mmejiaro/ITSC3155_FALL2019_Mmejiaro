@@ -14,7 +14,8 @@ module FunWithStrings
         count[phrase] = 1
       end
     end
-    return count
+    
+    count
     
   end
   def anagram_groups
